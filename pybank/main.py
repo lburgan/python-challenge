@@ -41,7 +41,7 @@ with open(budgets_path, "r") as budgets_csv:
         changes.append(change)
 
         #set current value as comparison for next iteration
-        change = int(row[1])
+        compare = int(row[1])
     
 #find the max increase
 max_increase = max(changes)
